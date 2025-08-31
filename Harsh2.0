@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float dollars, pounds;
+
+    // Taking input from user
+    printf("Enter amount in Dollars: ");
+    scanf("%f", &dollars);
+
+    // Conversion (1 Dollar = 48 Rs, 1 Pound = 70 Rs)
+    pounds = (dollars * 48) / 70;
+
+    // Display result
+    printf("%.2f Dollar(s) = %.2f Pound(s)\n", dollars, pounds);
+
+    return 0;
+}
