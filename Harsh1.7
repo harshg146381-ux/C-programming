@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int minutes, hours, remainingMinutes;
+
+    // Taking input from user
+    printf("Enter time in minutes: ");
+    scanf("%d", &minutes);
+
+    // Conversion
+    hours = minutes / 60;              // full hours
+    remainingMinutes = minutes % 60;   // leftover minutes
+
+    // Display result
+    printf("%d minutes = %d hour(s) and %d minute(s)\n", minutes, hours, remainingMinutes);
+
+    return 0;
+}
