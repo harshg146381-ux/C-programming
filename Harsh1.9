@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float dollars, rupees;
+
+    // Taking input from user
+    printf("Enter amount in Dollars: ");
+    scanf("%f", &dollars);
+
+    // Conversion (1 Dollar = 48 Rupees)
+    rupees = dollars * 48;
+
+    // Display result
+    printf("%.2f Dollar(s) = %.2f Rupees\n", dollars, rupees);
+
+    return 0;
+}
