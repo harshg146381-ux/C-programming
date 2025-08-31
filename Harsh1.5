@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+    int sum, diff, product;
+    float division;
+
+    // Taking input from user
+    printf("Enter first number: ");
+    scanf("%d", &num1);
+
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+
+    // Calculations
+    sum = num1 + num2;
+    diff = num1 - num2;
+    product = num1 * num2;
+
+    // Division with zero check
+    if (num2 != 0) {
+        division = (float)num1 / num2;  // type casting to float
+    } else {
+        division = 0; // just placeholder
+        printf("Warning: Division by zero is not possible.\n");
+    }
+
+    // Display results
+    printf("\nResults:\n");
+    printf("Addition = %d\n", sum);
+    printf("Subtraction = %d\n", diff);
+    printf("Multiplication = %d\n", product);
+    if (num2 != 0)
+        printf("Division = %.2f\n", division);
+
+    return 0;
+}
