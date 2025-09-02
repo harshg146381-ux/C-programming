@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    long bytes;
+    float kb, mb, gb;
+    printf("Enter bytes: ");
+    scanf("%ld", &bytes);
+    kb = bytes / 1024.0;
+    mb = kb / 1024.0;
+    gb = mb / 1024.0;
+    printf("KB = %.2f\nMB = %.2f\nGB = %.2f", kb, mb, gb);
+    return 0;
+}
